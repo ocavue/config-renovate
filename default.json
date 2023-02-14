@@ -31,11 +31,11 @@
             "matchUpdateTypes": [
                 "major"
             ],
-            "stabilityDays": 7,
+            "stabilityDays": 14,
             "prPriority": 10
         }
     ],
-    "prConcurrentLimit": 1,
+    "prConcurrentLimit": 2,
     "rangeStrategy": "bump",
     "dependencyDashboard": false
 }
