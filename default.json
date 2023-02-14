@@ -1,0 +1,41 @@
+{
+    "extends": [
+        "config:base",
+        "schedule:weekly",
+        ":semanticCommitTypeAll(chore)"
+    ],
+    "packageRules": [
+        {
+            "groupName": "Remirror packages",
+            "matchSourceUrlPrefixes": [
+                "https://github.com/remirror/"
+            ],
+            "prPriority": 40
+        },
+        {
+            "groupName": "ProseMirror packages",
+            "matchSourceUrlPrefixes": [
+                "https://github.com/ProseMirror/"
+            ],
+            "prPriority": 30
+        },
+        {
+            "groupName": "dependencies (non-major)",
+            "matchUpdateTypes": [
+                "patch",
+                "minor"
+            ],
+            "prPriority": 20
+        },
+        {
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "stabilityDays": 7,
+            "prPriority": 10
+        }
+    ],
+    "prConcurrentLimit": 1,
+    "rangeStrategy": "bump",
+    "dependencyDashboard": false
+}
