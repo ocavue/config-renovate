@@ -35,6 +35,9 @@
             "prPriority": 10
         }
     ],
+    "postUpdateOptions": [
+        "pnpmDedupe"
+    ],
     "prConcurrentLimit": 2,
     "rangeStrategy": "bump",
     "dependencyDashboard": false
