@@ -38,6 +38,7 @@
     "postUpdateOptions": [
         "pnpmDedupe"
     ],
+    "branchNameStrict": true,
     "prConcurrentLimit": 2,
     "rangeStrategy": "bump",
     "dependencyDashboard": false
