@@ -5,7 +5,7 @@
     ],
     "packageRules": [
         {
-            "groupName": "ProseMirror packages",
+            "groupName": "Remirror packages",
             "matchPackagePatterns": [
                 "remirror"
             ],
