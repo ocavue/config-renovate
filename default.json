@@ -1,7 +1,6 @@
 {
     "extends": [
         "config:base",
-        "schedule:weekly",
         ":semanticCommitTypeAll(chore)"
     ],
     "packageRules": [
@@ -25,14 +24,20 @@
                 "patch",
                 "minor"
             ],
-            "prPriority": 20
+            "prPriority": 20,
+            "extends": [
+                "schedule:weekly"
+            ]
         },
         {
             "matchUpdateTypes": [
                 "major"
             ],
             "stabilityDays": 14,
-            "prPriority": 10
+            "prPriority": 10,
+            "extends": [
+                "schedule:monthly"
+            ]
         }
     ],
     "postUpdateOptions": [
