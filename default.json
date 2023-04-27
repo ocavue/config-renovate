@@ -5,16 +5,16 @@
     ],
     "packageRules": [
         {
-            "groupName": "Remirror packages",
-            "matchSourceUrlPrefixes": [
-                "https://github.com/remirror/"
+            "groupName": "ProseMirror packages",
+            "matchPackagePatterns": [
+                "remirror"
             ],
             "prPriority": 40
         },
         {
             "groupName": "ProseMirror packages",
-            "matchSourceUrlPrefixes": [
-                "https://github.com/ProseMirror/"
+            "matchPackagePatterns": [
+                "prosemirror"
             ],
             "prPriority": 30
         },
@@ -24,20 +24,24 @@
                 "patch",
                 "minor"
             ],
-            "prPriority": 20,
+            "excludePackagePatterns": [
+                "remirror",
+                "prosemirror"
+            ],
             "extends": [
                 "schedule:weekly"
-            ]
+            ],
+            "prPriority": 20
         },
         {
             "matchUpdateTypes": [
                 "major"
             ],
             "stabilityDays": 14,
-            "prPriority": 10,
             "extends": [
                 "schedule:monthly"
-            ]
+            ],
+            "prPriority": 10
         }
     ],
     "postUpdateOptions": [
