@@ -20,6 +20,12 @@
             "matchPackagePatterns": [
                 "prosemirror"
             ],
+            "excludePackagePatterns": [
+                "jest-prosemirror"
+            ],
+            "extends": [
+                "schedule:daily"
+            ],
             "prPriority": 30
         },
         {
