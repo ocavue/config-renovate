@@ -9,6 +9,9 @@
             "matchPackagePatterns": [
                 "remirror"
             ],
+            "extends": [
+                "schedule:daily"
+            ],
             "prPriority": 40
         },
         {
