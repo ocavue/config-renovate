@@ -34,10 +34,6 @@
                 "patch",
                 "minor"
             ],
-            "excludePackagePatterns": [
-                "remirror",
-                "prosemirror"
-            ],
             "extends": [
                 "schedule:weekly"
             ],
