@@ -2,7 +2,10 @@
     "extends": [
         "config:base",
         ":semanticCommitTypeAll(chore)",
-        ":disablePeerDependencies"
+        // Disable peer dependency updates
+        ":disablePeerDependencies",
+        // Do not ignore any packages under examples
+        ":includeNodeModules"
     ],
     "packageRules": [
         {
