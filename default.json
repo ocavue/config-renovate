@@ -39,7 +39,7 @@
                 "minor"
             ],
             "extends": [
-                "schedule:weekly"
+                "schedule:monthly"
             ],
             "prPriority": 20
         },
