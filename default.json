@@ -14,7 +14,7 @@
             "minimumReleaseAge": "30 days"
         },
         {
-            "groupName": "dependencies (non-major)",
+            "groupName": "dependencies (part1)",
             "matchUpdateTypes": [
                 "patch",
                 "minor"
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "groupName": "dependencies (common)",
+            "groupName": "dependencies (part2)",
             "matchSourceUrls": [
                 "https://github.com/ocauve/*",
                 "https://github.com/prosekit/*",
