@@ -7,6 +7,20 @@
     ],
     "packageRules": [
         {
+            "description": "Ignore @types/node",
+            "matchPackageNames": [
+                "@types/node"
+            ],
+            "enabled": false
+        },
+        {
+            "description": "Ignore lychee-action because of https://github.com/lycheeverse/lychee/issues/1577",
+            "matchPackageNames": [
+                "lycheeverse/lychee-action"
+            ],
+            "enabled": false
+        },
+        {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
                 "typescript",
@@ -15,13 +29,6 @@
                 "@unocss/*"
             ],
             "minimumReleaseAge": "30 days"
-        },
-        {
-            "description": "Delay @types/node",
-            "matchPackageNames": [
-                "@types/node"
-            ],
-            "minimumReleaseAge": "18 months"
         },
         {
             "groupName": "dependencies (non-major)",
