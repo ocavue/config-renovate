@@ -7,28 +7,11 @@
     ],
     "packageRules": [
         {
-            "groupName": "Remirror packages",
-            "matchPackagePatterns": [
-                "jest-prosemirror",
-                "remirror"
+            "description": "Delay updates to typescript to 30 days since it tends to break something",
+            "matchPackageNames": [
+                "typescript"
             ],
-            "extends": [
-                "schedule:daily"
-            ],
-            "prPriority": 40
-        },
-        {
-            "groupName": "ProseMirror packages",
-            "matchPackagePatterns": [
-                "prosemirror"
-            ],
-            "excludePackagePatterns": [
-                "jest-prosemirror"
-            ],
-            "extends": [
-                "schedule:daily"
-            ],
-            "prPriority": 30
+            "minimumReleaseAge": "30 days"
         },
         {
             "groupName": "dependencies (non-major)",
@@ -38,18 +21,25 @@
             ],
             "extends": [
                 "schedule:monthly"
-            ],
-            "prPriority": 20
+            ]
+        },
+        {
+            "groupName": "dependencies (common)",
+            "matchSourceUrls": [
+                "https://github.com/ocauve/*",
+                "https://github.com/prosekit/*",
+                "https://github.com/ProseMirror/*",
+                "https://github.com/unocss/*"
+            ]
         },
         {
             "matchUpdateTypes": [
                 "major"
             ],
-            "stabilityDays": 14,
+            "minimumReleaseAge": "14 days",
             "extends": [
                 "schedule:monthly"
-            ],
-            "prPriority": 10
+            ]
         }
     ],
     "postUpdateOptions": [
@@ -57,6 +47,5 @@
     ],
     "branchNameStrict": true,
     "prConcurrentLimit": 2,
-    "rangeStrategy": "bump",
-    "dependencyDashboard": false
+    "rangeStrategy": "bump"
 }
