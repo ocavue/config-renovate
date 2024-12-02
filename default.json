@@ -7,14 +7,17 @@
     ],
     "packageRules": [
         {
-            "description": "Delay updates to typescript to 30 days since it tends to break something",
+            "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
-                "typescript"
+                "typescript",
+                "eslint",
+                "unocss",
+                "@unocss/*"
             ],
             "minimumReleaseAge": "30 days"
         },
         {
-            "groupName": "dependencies (part1)",
+            "groupName": "dependencies (non-major)",
             "matchUpdateTypes": [
                 "patch",
                 "minor"
@@ -24,19 +27,10 @@
             ]
         },
         {
-            "groupName": "dependencies (part2)",
-            "matchSourceUrls": [
-                "https://github.com/ocauve/*",
-                "https://github.com/prosekit/*",
-                "https://github.com/ProseMirror/*",
-                "https://github.com/unocss/*"
-            ]
-        },
-        {
             "matchUpdateTypes": [
                 "major"
             ],
-            "minimumReleaseAge": "14 days",
+            "minimumReleaseAge": "17 days",
             "extends": [
                 "schedule:monthly"
             ]
