@@ -17,6 +17,13 @@
             "minimumReleaseAge": "30 days"
         },
         {
+            "description": "Delay @types/node",
+            "matchPackageNames": [
+                "@types/node"
+            ],
+            "minimumReleaseAge": "18 months"
+        },
+        {
             "groupName": "dependencies (non-major)",
             "matchUpdateTypes": [
                 "patch",
