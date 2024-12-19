@@ -3,7 +3,8 @@
         "config:recommended",
         ":semanticCommitTypeAll(chore)",
         ":disablePeerDependencies",
-        ":includeNodeModules"
+        ":includeNodeModules",
+        "github>kachick/renovate-config-dprint#1.3.0"
     ],
     "packageRules": [
         {
