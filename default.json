@@ -7,9 +7,10 @@
     ],
     "packageRules": [
         {
-            "description": "Ignore @types/node",
+            "description": "Ignore Node.js",
             "matchPackageNames": [
-                "@types/node"
+                "@types/node",
+                "node"
             ],
             "enabled": false
         },
