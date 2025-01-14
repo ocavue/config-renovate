@@ -30,7 +30,8 @@
             "groupName": "dependencies (non-major)",
             "matchUpdateTypes": [
                 "patch",
-                "minor"
+                "minor",
+                "digest"
             ],
             "extends": [
                 "schedule:monthly"
