@@ -18,6 +18,7 @@
         {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
+                "typedoc",
                 "typescript",
                 "eslint",
                 "@eslint/*",
