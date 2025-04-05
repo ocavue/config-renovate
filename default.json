@@ -51,6 +51,9 @@
     "postUpdateOptions": [
         "pnpmDedupe"
     ],
+    "vulnerabilityAlerts": {
+        "enabled": false
+    },
     "branchNameStrict": true,
     "prConcurrentLimit": 2,
     "rangeStrategy": "bump"
