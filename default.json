@@ -18,7 +18,6 @@
         {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
-                "typedoc",
                 "typescript",
                 "eslint",
                 "@eslint/*",
@@ -26,6 +25,13 @@
                 "@unocss/*"
             ],
             "minimumReleaseAge": "30 days"
+        },
+        {
+            "description": "Delay typedoc until downstream dependencies are ready",
+            "matchPackageNames": [
+                "typedoc"
+            ],
+            "minimumReleaseAge": "60 days"
         },
         {
             "groupName": "dependencies (non-major)",
