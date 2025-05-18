@@ -31,7 +31,7 @@
             "matchPackageNames": [
                 "typedoc"
             ],
-            "minimumReleaseAge": "60 days"
+            "minimumReleaseAge": "90 days"
         },
         {
             "groupName": "dependencies (non-major)",
