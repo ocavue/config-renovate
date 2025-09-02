@@ -27,13 +27,6 @@
             "minimumReleaseAge": "30 days"
         },
         {
-            "description": "Delay typedoc until downstream dependencies are ready",
-            "matchPackageNames": [
-                "typedoc"
-            ],
-            "minimumReleaseAge": "90 days"
-        },
-        {
             "groupName": "dependencies (non-major)",
             "matchUpdateTypes": [
                 "patch",
