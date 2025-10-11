@@ -19,8 +19,6 @@
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
                 "typescript",
-                "eslint",
-                "@eslint/*",
                 "unocss",
                 "@unocss/*"
             ],
@@ -33,9 +31,7 @@
                 "minor",
                 "digest"
             ],
-            "extends": [
-                "schedule:monthly"
-            ]
+            "dependencyDashboardApproval": true
         },
         {
             "matchUpdateTypes": [
