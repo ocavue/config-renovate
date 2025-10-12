@@ -4,7 +4,6 @@
         ":semanticCommitTypeAll(chore)",
         ":disablePeerDependencies",
         ":includeNodeModules",
-        ":dependencyDashboardApproval",
         "github>kachick/renovate-config-dprint#1.3.0"
     ],
     "packageRules": [
@@ -25,7 +24,8 @@
                 "unocss",
                 "@unocss/*"
             ],
-            "minimumReleaseAge": "30 days"
+            "minimumReleaseAge": "30 days",
+            "dependencyDashboardApproval": true
         },
         {
             "groupName": "dependencies (non-major)",
@@ -33,7 +33,8 @@
                 "patch",
                 "minor",
                 "digest"
-            ]
+            ],
+            "dependencyDashboardApproval": true
         },
         {
             "matchUpdateTypes": [
@@ -42,9 +43,11 @@
             "minimumReleaseAge": "30 days",
             "extends": [
                 "schedule:monthly"
-            ]
+            ],
+            "dependencyDashboardApproval": true
         }
     ],
+    "dependencyDashboardApproval": true,
     "postUpdateOptions": [
         "pnpmDedupe"
     ],
