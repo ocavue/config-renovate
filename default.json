@@ -35,6 +35,7 @@
                 "minor",
                 "digest"
             ],
+            "minimumReleaseAge": "1 day",
             "dependencyDashboardApproval": true
         },
         {
