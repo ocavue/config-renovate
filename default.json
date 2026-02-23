@@ -4,6 +4,7 @@
         ":semanticCommitTypeAll(chore)",
         ":disablePeerDependencies",
         ":includeNodeModules",
+        "helpers:pinGitHubActionDigests",
         "github>kachick/renovate-config-dprint#1.3.0"
     ],
     "packageRules": [
@@ -18,7 +19,6 @@
         {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
-                "@g-plane/markup_fmt",
                 "typescript",
                 "eslint",
                 "@eslint/*",
