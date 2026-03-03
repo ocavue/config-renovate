@@ -52,6 +52,7 @@
     "lockFileMaintenance": {
         "enabled": true
     },
+    "draftPR": true,
     "dependencyDashboardApproval": true,
     "postUpdateOptions": [
         "pnpmDedupe"
