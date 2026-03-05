@@ -10,7 +10,10 @@
     "packageRules": [
         {
             "description": "Ignore Node.js",
-            "matchPackageNames": [
+            // We need to use "depName" instead of "packageName" if we want to 
+            // ignore the "node" update in github actions. 
+            // See https://github.com/renovatebot/renovate/blob/8510638513ed4b515688f249b9eca2a6c0336075/lib/modules/manager/github-actions/extract.ts#L253-L254
+            "matchDepNames": [
                 "@types/node",
                 "node"
             ],
