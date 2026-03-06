@@ -20,6 +20,17 @@
             "enabled": false
         },
         {
+            "description": "Disable some frequent updates",
+            "matchPackageNames": [
+                "@iconify-json/**"
+            ],
+            "matchUpdateTypes": [
+                "patch",
+                "minor"
+            ],
+            "enabled": false
+        },
+        {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
                 "typescript",
