@@ -64,7 +64,10 @@
         }
     ],
     "lockFileMaintenance": {
-        "enabled": true
+        "enabled": true,
+        "schedule": [
+            "* * 1 */12 *"
+        ]
     },
     "draftPR": true,
     "dependencyDashboardApproval": true,
