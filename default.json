@@ -2,7 +2,7 @@
     "extends": [
         "config:recommended",
         ":semanticCommitTypeAll(chore)",
-        ":disablePeerDependencies",
+        ":widenPeerDependencies",
         ":includeNodeModules",
         "helpers:pinGitHubActionDigestsToSemver",
         "github>kachick/renovate-config-dprint#1.3.0"
