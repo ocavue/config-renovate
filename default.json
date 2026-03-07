@@ -21,6 +21,15 @@
             "enabled": false
         },
         {
+            "description": "Allow some unstable packages",
+            "matchPackageNames": [
+                "typescript",
+                "vite",
+                "astro"
+            ],
+            "ignoreUnstable": false
+        },
+        {
             "description": "Disable some frequent updates",
             "matchPackageNames": [
                 "@iconify-json/**"
