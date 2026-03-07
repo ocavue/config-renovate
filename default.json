@@ -33,11 +33,7 @@
         {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
-                "typescript",
-                "eslint",
-                "@eslint/*",
-                "unocss",
-                "@unocss/*"
+                "typescript"
             ],
             "minimumReleaseAge": "30 days",
             "dependencyDashboardApproval": true
