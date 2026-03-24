@@ -43,7 +43,7 @@
         {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
-                "typescript"
+                "jsdom"
             ],
             "minimumReleaseAge": "30 days",
             "dependencyDashboardApproval": true
@@ -62,10 +62,7 @@
             "matchUpdateTypes": [
                 "major"
             ],
-            "minimumReleaseAge": "30 days",
-            "extends": [
-                "schedule:monthly"
-            ],
+            "minimumReleaseAge": "1 day"
             "dependencyDashboardApproval": true
         }
     ],
