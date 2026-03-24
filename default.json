@@ -62,7 +62,7 @@
             "matchUpdateTypes": [
                 "major"
             ],
-            "minimumReleaseAge": "1 day"
+            "minimumReleaseAge": "1 day",
             "dependencyDashboardApproval": true
         }
     ],
