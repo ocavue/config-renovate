@@ -21,15 +21,6 @@
             "enabled": false
         },
         {
-            "description": "Allow some unstable packages",
-            "matchPackageNames": [
-                "typescript",
-                "vite",
-                "astro"
-            ],
-            "ignoreUnstable": false
-        },
-        {
             "description": "Disable some frequent updates",
             "matchPackageNames": [
                 "@iconify-json/**"
@@ -43,7 +34,7 @@
         {
             "description": "Delay some packages since they tend to break something",
             "matchPackageNames": [
-                "jsdom"
+                "jsdom", "oxfmt"
             ],
             "minimumReleaseAge": "30 days",
             "dependencyDashboardApproval": true
