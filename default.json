@@ -21,23 +21,49 @@
             "enabled": false
         },
         {
-            "description": "Disable some frequent updates",
+            "description": "Reduce noise",
             "matchPackageNames": [
-                "@iconify-json/**"
+                "@types/*",
+                "oxfmt",
+                "jsdom",
+                "prettier",
+                "eslint",
+                "eslint-*",
+                "@iconify-json/*",
+                "vite",
+                "@vitejs/*",
+                "next",
+                "svelte",
+                "@sveltejs/*",
+                "svelte-*",
+                "postcss",
+                "vue",
+                "@vue/*",
+                "vue-*",
+                "tailwindcss",
+                "@tailwindcss/*",
+                "katex",
+                "preact",
+                "@vitest/*",
+                "vitest",
+                "typescript",
+                "turbo",
+                "playwright"
             ],
-            "matchUpdateTypes": [
-                "patch",
-                "minor"
-            ],
+            "matchCurrentAge": "< 30 days",
             "enabled": false
         },
         {
-            "description": "Delay some packages since they tend to break something",
+            "description": "Update some dependencies immediately",
             "matchPackageNames": [
-                "jsdom", "oxfmt"
+                "@ocavue/*",
+                "@prosekit/*",
+                "prosekit",
+                "prosemirror-*",
+                "astrobook",
+                "starlight-theme-nova"
             ],
-            "minimumReleaseAge": "30 days",
-            "dependencyDashboardApproval": true
+            "minimumReleaseAge": "0 days"
         },
         {
             "groupName": "dependencies (non-major)",
@@ -46,15 +72,13 @@
                 "minor",
                 "digest"
             ],
-            "minimumReleaseAge": "7 day",
-            "dependencyDashboardApproval": true
+            "minimumReleaseAge": "7 days"
         },
         {
             "matchUpdateTypes": [
                 "major"
             ],
-            "minimumReleaseAge": "7 day",
-            "dependencyDashboardApproval": true
+            "minimumReleaseAge": "7 days"
         }
     ],
     "lockFileMaintenance": {
@@ -70,6 +94,9 @@
     ],
     "vulnerabilityAlerts": {
         "enabled": false
+    },
+    "env": {
+        "PNPM_MAX_WORKERS": "1"
     },
     "branchNameStrict": true,
     "prConcurrentLimit": 2,
