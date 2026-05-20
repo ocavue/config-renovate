@@ -29,6 +29,8 @@
                 "prettier",
                 "eslint",
                 "eslint-*",
+                "@eslint/*",
+                "@eslint-react/eslint-plugin",
                 "@iconify-json/*",
                 "vite",
                 "@vitejs/*",
