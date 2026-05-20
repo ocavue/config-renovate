@@ -38,6 +38,7 @@
                 "svelte",
                 "@sveltejs/*",
                 "svelte-*",
+                "knip",
                 "postcss",
                 "vue",
                 "@vue/*",
