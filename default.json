@@ -24,6 +24,7 @@
             "description": "Reduce noise",
             "matchPackageNames": [
                 "@types/*",
+                "pnpm",
                 "oxfmt",
                 "jsdom",
                 "prettier",
@@ -51,9 +52,10 @@
                 "vitest",
                 "typescript",
                 "turbo",
+                "wrangler",
                 "playwright"
             ],
-            "matchCurrentAge": "< 30 days",
+            "matchCurrentAge": "< 14 days",
             "enabled": false
         },
         {
@@ -75,7 +77,7 @@
                 "minor",
                 "digest"
             ],
-            "minimumReleaseAge": "7 days"
+            "minimumReleaseAge": "3 days"
         },
         {
             "matchUpdateTypes": [
