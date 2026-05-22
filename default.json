@@ -72,6 +72,7 @@
                 "prosemirror-*",
                 "starlight-theme-nova"
             ],
+            "dependencyDashboardApproval": true,
             "minimumReleaseAge": "0 days"
         },
         {
@@ -81,12 +82,14 @@
                 "minor",
                 "digest"
             ],
+            "dependencyDashboardApproval": true,
             "minimumReleaseAge": "3 days"
         },
         {
             "matchUpdateTypes": [
                 "major"
             ],
+            "dependencyDashboardApproval": true,
             "minimumReleaseAge": "7 days"
         }
     ],
