@@ -63,19 +63,6 @@
             "enabled": false
         },
         {
-            "description": "Update some dependencies immediately",
-            "matchPackageNames": [
-                "astrobook",
-                "@ocavue/*",
-                "prosekit",
-                "@prosekit/*",
-                "prosemirror-*",
-                "starlight-theme-nova"
-            ],
-            "dependencyDashboardApproval": true,
-            "minimumReleaseAge": "0 days"
-        },
-        {
             "groupName": "dependencies (non-major)",
             "matchUpdateTypes": [
                 "patch",
@@ -91,6 +78,21 @@
             ],
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "7 days"
+        },
+        {
+            "description": "Update some dependencies immediately",
+            "matchPackageNames": [
+                "astrobook",
+                "shadcn-schema",
+                "@ocavue/*",
+                "prosekit",
+                "@prosekit/*",
+                "prosemirror-*",
+                "shiki-twoslash-renderer",
+                "starlight-theme-nova"
+            ],
+            "dependencyDashboardApproval": true,
+            "minimumReleaseAge": "0 days"
         }
     ],
     "lockFileMaintenance": {
