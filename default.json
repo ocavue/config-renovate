@@ -83,6 +83,14 @@
             "minimumReleaseAge": "7 days"
         },
         {
+            "description": "Update some dependencies after a longer time",
+            "matchPackageNames": [
+                "tinyexec"
+            ],
+            "dependencyDashboardApproval": true,
+            "minimumReleaseAge": "10 days"
+        },
+        {
             "description": "Update some dependencies immediately",
             "matchPackageNames": [
                 "astrobook",
