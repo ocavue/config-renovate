@@ -33,6 +33,7 @@
                 "knip",
                 "next",
                 "oxfmt",
+                "pkg-pr-new",
                 "playwright",
                 "@playwright/*",
                 "pnpm",
@@ -48,6 +49,8 @@
                 "@types/*",
                 "typescript",
                 "@typescript/*",
+                "typescript-eslint",
+                "@typescript-eslint/*",
                 "unocss",
                 "@unocss/*",
                 "vite",
@@ -70,7 +73,7 @@
                 "digest"
             ],
             "dependencyDashboardApproval": true,
-            "minimumReleaseAge": "3 days"
+            "minimumReleaseAge": "1 days"
         },
         {
             "matchUpdateTypes": [
