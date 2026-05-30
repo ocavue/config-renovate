@@ -21,51 +21,6 @@
             "enabled": false
         },
         {
-            "description": "Reduce noise",
-            "matchPackageNames": [
-                "eslint",
-                "eslint-*",
-                "@eslint-react/*",
-                "@eslint/*",
-                "@iconify-json/*",
-                "jsdom",
-                "katex",
-                "knip",
-                "next",
-                "oxfmt",
-                "pkg-pr-new",
-                "playwright",
-                "@playwright/*",
-                "pnpm",
-                "postcss",
-                "preact",
-                "prettier",
-                "svelte",
-                "svelte-*",
-                "@sveltejs/*",
-                "tailwindcss",
-                "@tailwindcss/*",
-                "turbo",
-                "@types/*",
-                "typescript",
-                "@typescript/*",
-                "typescript-eslint",
-                "@typescript-eslint/*",
-                "unocss",
-                "@unocss/*",
-                "vite",
-                "@vitejs/*",
-                "vitest",
-                "@vitest/*",
-                "vue",
-                "vue-*",
-                "@vue/*",
-                "wrangler"
-            ],
-            "matchCurrentAge": "< 14 days",
-            "enabled": false
-        },
-        {
             "groupName": "dependencies (non-major)",
             "matchUpdateTypes": [
                 "patch",
@@ -83,16 +38,16 @@
             "minimumReleaseAge": "7 days"
         },
         {
-            "description": "Update some dependencies after a longer time",
-            "matchPackageNames": [
-                "tinyexec"
-            ],
+            "description": "Reduce noise",
             "dependencyDashboardApproval": true,
-            "minimumReleaseAge": "10 days"
+            "matchCurrentAge": "< 30 days",
+            "minimumReleaseAge": "30 days"
         },
         {
             "description": "Update some dependencies immediately",
             "matchPackageNames": [
+                "astro",
+                "@astrojs/*",
                 "astrobook",
                 "shadcn-schema",
                 "@ocavue/*",
