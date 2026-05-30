@@ -55,7 +55,9 @@
                 "@prosekit/*",
                 "prosemirror-*",
                 "shiki-twoslash-renderer",
-                "starlight-theme-nova"
+                "starlight-theme-nova",
+                "tsdown",
+                "@tsdown/*"
             ],
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "0 days"
