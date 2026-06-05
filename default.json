@@ -50,14 +50,15 @@
                 "@astrojs/*",
                 "astrobook",
                 "shadcn-schema",
+                "monorepo-typescript-references",
                 "@ocavue/*",
                 "prosekit",
                 "@prosekit/*",
                 "prosemirror-*",
+                "rehype-resolve-markdown-links",
+                "satteri-resolve-markdown-links",
                 "shiki-twoslash-renderer",
-                "starlight-theme-nova",
-                "tsdown",
-                "@tsdown/*"
+                "starlight-theme-nova"
             ],
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "0 days"
