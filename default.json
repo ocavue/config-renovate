@@ -64,19 +64,30 @@
         {
             "description": "Update some trusted dependencies immediately",
             "matchPackageNames": [
+                // Sorted alphabetically, ignoring the leading "@" character.
+                "@aria-ui/*",
                 "astro",
-                "@astrojs/*",
+                "astro-minify-html-swc",
+                "astro-theme-toggle",
                 "astrobook",
-                "shadcn-schema",
+                "@astrobook/*",
+                "@astrojs/*",
+                "diffable-html-snapshot",
+                "histogram-diff",
+                "@meowdown/*",
                 "monorepo-typescript-references",
                 "@ocavue/*",
+                "@opencvjs/*",
                 "prosekit",
                 "@prosekit/*",
                 "prosemirror-*",
                 "rehype-resolve-markdown-links",
                 "satteri-resolve-markdown-links",
+                "server-dom-shim",
+                "shadcn-schema",
                 "shiki-twoslash-renderer",
-                "starlight-theme-nova"
+                "starlight-theme-nova",
+                "vitest-browser-commands"
             ],
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "0 days"
@@ -90,8 +101,8 @@
         ]
     },
     "draftPR": true,
-    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with ❤️.",
-    // "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 🩷.",
+    // "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with ❤️.",
+    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 🩷.",
     // "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 🧡.",
     // "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 💛.",
     // "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 💚.",
