@@ -23,7 +23,7 @@
         {
             "description": "Group non-major updates (patch, minor, digest) into a single PR",
             "groupName": "dependencies",
-            "groupSlug": "dep-batch",
+            "groupSlug": "deps",
             "matchUpdateTypes": [
                 "patch",
                 "minor",
@@ -39,7 +39,7 @@
         //     // separate branch/PR even though "groupName" matches.
         //     "description": "Split potentially breaking 0.x minor updates into a separate PR",
         //     "groupName": "dependencies",
-        //     "groupSlug": "dep-minor",
+        //     "groupSlug": "deps",
         //     "matchUpdateTypes": [
         //         "minor"
         //     ],
@@ -90,7 +90,7 @@
         ]
     },
     "draftPR": true,
-    "prFooter": "Config: [ocavue/config-renovate](https://github.com/ocavue/config-renovate) 2026-06-15",
+    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) v3",
     "dependencyDashboardApproval": true,
     "postUpdateOptions": [
         "pnpmDedupe"
@@ -98,7 +98,7 @@
     "vulnerabilityAlerts": {
         "enabled": true,
         "groupName": "dependencies",
-        "groupSlug": "dep-batch",
+        "groupSlug": "deps",
         "dependencyDashboardApproval": true
     },
     "env": {
