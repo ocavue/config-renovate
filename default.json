@@ -6,13 +6,13 @@
         ":widenPeerDependencies",
         ":includeNodeModules",
         "helpers:pinGitHubActionDigestsToSemver",
-        "github>kachick/renovate-config-dprint#1.3.0"
+        "github>kachick/renovate-config-dprint#1a2f26400f460486aefe8ea1e9405b239917ebe9" // 1.3.0
     ],
     "packageRules": [
         {
             "description": "Ignore Node.js",
             // We need to use "depName" instead of "packageName" if we want to
-            // ignore the "node" update in github actions.
+            // ignore the "node" update in GitHub Actions.
             // See https://github.com/renovatebot/renovate/blob/8510638513ed4b515688f249b9eca2a6c0336075/lib/modules/manager/github-actions/extract.ts#L253-L254
             "matchDepNames": [
                 "@types/node",
@@ -21,7 +21,9 @@
             "enabled": false
         },
         {
-            "groupName": "dependencies (non-major)",
+            "description": "Group non-major updates (patch, minor, digest) into a single PR",
+            "groupName": "dependencies",
+            "groupSlug": "dep-batch",
             "matchUpdateTypes": [
                 "patch",
                 "minor",
@@ -31,6 +33,22 @@
             "minimumReleaseAge": "1 days"
         },
         {
+            // A minor update on a 0.x package (e.g. ^0.4.0 -> ^0.5.1) crosses
+            // the caret compatibility range, so split it into its own PR while
+            // keeping the same group name. The different "groupSlug" forces a
+            // separate branch/PR even though "groupName" matches.
+            "description": "Split potentially breaking 0.x minor updates into a separate PR",
+            "groupName": "dependencies",
+            "groupSlug": "dep-minor",
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "matchCurrentVersion": "<1.0.0",
+            "dependencyDashboardApproval": true,
+            "minimumReleaseAge": "1 days"
+        },
+        {
+            "description": "Require a longer release age for major updates",
             "matchUpdateTypes": [
                 "major"
             ],
@@ -66,17 +84,22 @@
     ],
     "lockFileMaintenance": {
         "enabled": true,
+        // Runs on the 1st of January each year
         "schedule": [
-            "* * 1 */12 *"
+            "* * 1 1 *"
         ]
     },
     "draftPR": true,
+    "prFooter": "Config: [ocavue/config-renovate](https://github.com/ocavue/config-renovate) `v1`",
     "dependencyDashboardApproval": true,
     "postUpdateOptions": [
         "pnpmDedupe"
     ],
     "vulnerabilityAlerts": {
-        "enabled": false
+        "enabled": true,
+        "groupName": "dependencies",
+        "groupSlug": "dep-batch",
+        "dependencyDashboardApproval": true
     },
     "env": {
         "PNPM_MAX_WORKERS": "1"
