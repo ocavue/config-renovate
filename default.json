@@ -58,8 +58,8 @@
         {
             "description": "Reduce noise from frequently-releasing packages",
             "dependencyDashboardApproval": true,
-            "matchCurrentAge": "<= 31 days",
-            "minimumReleaseAge": "30 days"
+            "matchCurrentAge": "< 720 hours",
+            "minimumReleaseAge": "720 hours"
         },
         {
             "description": "Update some trusted dependencies immediately",
