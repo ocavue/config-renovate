@@ -32,21 +32,16 @@
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "1 days"
         },
-        // {
-        //     // A minor update on a 0.x package (e.g. ^0.4.0 -> ^0.5.1) crosses
-        //     // the caret compatibility range, so split it into its own PR while
-        //     // keeping the same group name. The different "groupSlug" forces a
-        //     // separate branch/PR even though "groupName" matches.
-        //     "description": "Split potentially breaking 0.x minor updates into a separate PR",
-        //     "groupName": "dependencies",
-        //     "groupSlug": "deps",
-        //     "matchUpdateTypes": [
-        //         "minor"
-        //     ],
-        //     "matchCurrentVersion": "<1.0.0",
-        //     "dependencyDashboardApproval": true,
-        //     "minimumReleaseAge": "1 days"
-        // },
+        {
+            // A minor update on a 0.x package (e.g. ^0.4.0 -> ^0.5.1) crosses
+            // the caret compatibility range,
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "matchCurrentVersion": "<1.0.0",
+            "dependencyDashboardApproval": true,
+            "minimumReleaseAge": "1 days"
+        },
         {
             "description": "Require a longer release age for major updates",
             "matchUpdateTypes": [
