@@ -38,7 +38,6 @@
                 "minor"
             ],
             "matchCurrentVersion": "<1.0.0",
-            "matchManagers": ["cargo"],
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "7 days",
             "groupName": null,
@@ -96,6 +95,8 @@
                 "starlight-theme-nova",
                 "vitest-browser-commands"
             ],
+            "groupName": "dependencies",
+            "groupSlug": "deps",
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "0 days"
         }
@@ -109,7 +110,7 @@
     },
     "draftPR": true,
     // Bump the heart emoji to signal a config update. Options: ❤️ 🩷 🧡 💛 💚 💙 🩵 💜
-    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 💜",
+    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with ❤️",
     "dependencyDashboardApproval": true,
     "postUpdateOptions": [
         "pnpmDedupe"
