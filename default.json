@@ -59,7 +59,7 @@
             "minimumReleaseAge": "720 hours"
         },
         {
-            "description": "Update some trusted dependencies immediately",
+            "description": "Update some trusted dependencies sonner",
             "matchPackageNames": [
                 // Sorted alphabetically, ignoring the leading "@" character.
                 "@aria-ui/*",
@@ -99,7 +99,7 @@
             "groupName": "dependencies",
             "groupSlug": "deps",
             "dependencyDashboardApproval": true,
-            "minimumReleaseAge": "0 days"
+            "minimumReleaseAge": "24 hours"
         }
     ],
     "lockFileMaintenance": {
