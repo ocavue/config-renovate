@@ -39,6 +39,10 @@
                 "minor"
             ],
             "matchCurrentVersion": "<1.0.0",
+            "matchPackageNames": [
+              "!dprint",
+              "!oxfmt"
+            ],
             "dependencyDashboardApproval": true,
             "minimumReleaseAge": "7 days",
             "groupName": null,
