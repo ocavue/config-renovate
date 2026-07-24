@@ -107,6 +107,7 @@
                 "prosemirror-tables",
                 "prosemirror-transform",
                 "prosemirror-view",
+                "rolldown-plugin-dts",
                 "shiki-twoslash-renderer",
                 "starlight-theme-nova",
                 "vitest-browser-commands",
