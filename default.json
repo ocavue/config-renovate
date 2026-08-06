@@ -31,9 +31,12 @@
             "allowedVersions": "!/^7\\.0\\./"
         },
         {
-            "description": "Group non-major updates (patch, minor, digest) into a single PR",
+            "description": "Group non-major updates (patch, minor, digest) into a single PR, excluding cargo",
             "groupName": "dependencies",
             "groupSlug": "deps",
+            "matchManagers": [
+                "!cargo"
+            ],
             "matchUpdateTypes": [
                 "patch",
                 "minor",
