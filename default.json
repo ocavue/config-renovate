@@ -31,10 +31,11 @@
             "allowedVersions": "!/^7\\.0\\./"
         },
         {
-            "description": "Group non-major updates (patch, minor, digest) into a single PR, excluding cargo",
+            "description": "Group non-major updates (patch, minor, digest) into a single PR",
             "groupName": "dependencies",
             "groupSlug": "deps",
             "matchManagers": [
+                // Disable cargo updates untile it supports min-release-age (probally 2026 Dec). See https://github.com/rust-lang/cargo/issues/17009
                 "!cargo"
             ],
             "matchUpdateTypes": [
@@ -72,7 +73,7 @@
         {
             "description": "Reduce noise from frequently-releasing packages",
             "dependencyDashboardApproval": true,
-            "matchCurrentAge": "<= 30 days",
+            "matchCurrentAge": "< 28 days",
             "minimumReleaseAge": "30 days"
         },
         {
