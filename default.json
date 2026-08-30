@@ -20,9 +20,10 @@
             "allowedVersions": "!/^7\\.0\\./"
         },
         {
-            "description": "Only allow major updates for @types/node",
+            "description": "Only allow major updates for Node.js",
             "matchDepNames": [
-                "@types/node"
+                "@types/node",
+                "node"
             ],
             "matchUpdateTypes": [
                 "minor",
@@ -31,37 +32,18 @@
             "enabled": false
         },
         {
-            "description": "Allow major updates for @types/node after 2 years",
-            "matchDepNames": [
-                "@types/node"
-            ],
-            "matchUpdateTypes": [
-                "major"
-            ],
-            "minimumReleaseAge": "2 years"
-        },
-        {
-            "description": "Allow major Node.js updates after 2 years",
+            "description": "Allow major updates for Node.js after 2 years",
             // We need to use "depName" instead of "packageName" if we want to
             // match the "node" update in GitHub Actions.
             // See https://github.com/renovatebot/renovate/blob/8510638513ed4b515688f249b9eca2a6c0336075/lib/modules/manager/github-actions/extract.ts#L253-L254
             "matchDepNames": [
+                "@types/node",
                 "node"
             ],
             "matchUpdateTypes": [
                 "major"
             ],
             "minimumReleaseAge": "2 years"
-        },
-        {
-            "description": "Allow minor Node.js updates after 30 days",
-            "matchDepNames": [
-                "node"
-            ],
-            "matchUpdateTypes": [
-                "minor"
-            ],
-            "minimumReleaseAge": "30 days"
         },
         {
             "description": "Group non-major updates (patch, minor, digest) into a single PR",
@@ -165,7 +147,7 @@
     },
     "draftPR": true,
     // Bump the heart emoji to signal a config update. Options: ❤️ 🩷 🧡 💛 💚 💙 🩵 💜
-    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 💚",
+    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 💙",
     "dependencyDashboardApproval": true,
     "postUpdateOptions": [
         "pnpmDedupe"
