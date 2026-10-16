@@ -79,6 +79,23 @@
             "groupSlug": null
         },
         {
+            "description": "Group non-major Tauri updates (npm and cargo) into a single PR",
+            "matchPackageNames": [
+                "@tauri-apps/*",
+                "tauri",
+                "tauri-*"
+            ],
+            "matchUpdateTypes": [
+                "patch",
+                "minor",
+                "digest"
+            ],
+            "groupName": "tauri",
+            "groupSlug": "tauri",
+            "dependencyDashboardApproval": true,
+            "minimumReleaseAge": "1 days"
+        },
+        {
             "description": "Require a longer release age for major updates",
             "matchUpdateTypes": [
                 "major"
