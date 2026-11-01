@@ -167,7 +167,7 @@
     },
     "draftPR": true,
     // Bump the heart emoji to signal a config update. Options: ❤️ 🩷 🧡 💛 💚 💙 🩵 💜
-    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with 💛",
+    "prHeader": "This PR was generated using [ocavue/config-renovate](https://github.com/ocavue/config-renovate) with ❤️",
     "dependencyDashboardApproval": true,
     "postUpdateOptions": [
         "pnpmDedupe"
@@ -179,6 +179,7 @@
         "dependencyDashboardApproval": true
     },
     "branchNameStrict": true,
+    "commitHourlyLimit": 1,
     "prConcurrentLimit": 2,
     "rangeStrategy": "bump"
 }
