@@ -20,7 +20,6 @@ My [shareable](https://docs.renovatebot.com/config-presets/) [Renovate](https://
 - **Isolated majors.** Each major update gets its own PR.
 - **Stability windows.** Minor waits 1 day, major 7 days.
 - **Noise control.** Packages that release constantly are throttled to about one update a month.
-- **Slow mise tools.** A mise tool updates only when its current version is at least 60 days old.
 
 ## Sponsors
 
